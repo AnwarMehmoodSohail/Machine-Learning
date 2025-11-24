@@ -10,3 +10,4 @@ You can explore and obtain free API keys here:
 Just **sign up**, choose your desired model, and start using the API instantly.
 
 Happy learning and experimenting with AI! 🤖💡
+ 
