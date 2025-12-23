@@ -13,12 +13,12 @@
 | Prediction         | Predict after padding → sequence → model | Directly on tokenized text                | Zero-shot with prompts **or** fine-tuned classification head |
 
 
-LSTM
+# LSTM
 
-# Tokenize & pad sequences
+## Tokenize & pad sequences
 tokenizer = Tokenizer()
 X = pad_sequences(tokenizer.texts_to_sequences(texts), maxlen=max_len)
-# Model
+## Model
 model = Sequential([
     Embedding(input_dim=vocab_size, output_dim=16, input_length=max_len),
     LSTM(32),
@@ -28,7 +28,7 @@ model = Sequential([
 
 
 
-BERT 
+# BERT 
 
 from transformers import BertTokenizer, BertForSequenceClassification
 
@@ -37,7 +37,7 @@ inputs = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
 model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
 
 
-GPT
+# GPT
 
 from transformers import GPT2Tokenizer, GPT2ForSequenceClassification
 
