@@ -1,0 +1,10 @@
+langchain
+openai
+tiktoken
+sentence-transformers
+chromadb
+faiss-cpu
+langchain_community
+bs4
+langchain_openai
+langchain.chains
